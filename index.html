@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/trello.png" type="image/x-icon" />
+    <!-- axis CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Trello Card</title>
+  </head>
+  <body>
+    <div class="form_container">
+      <h2>Create Trello Card</h2>
+      <form id="trelloForm">
+        <div class="form_group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form_group">
+          <label for="description">Description:</label>
+          <input type="text" id="description" name="description" required />
+        </div>
+
+        <div class="form_group">
+          <label for="startDate">Start Date:</label>
+          <input
+            type="datetime-local"
+            id="startDate"
+            name="startDate"
+            required
+          />
+        </div>
+
+        <div class="form_group">
+          <label for="dueDate">Due Date:</label>
+          <input type="datetime-local" id="dueDate" name="dueDate" required />
+        </div>
+
+        <div class="form_group">
+          <input type="submit" value="Create Card" />
+        </div>
+      </form>
+    </div>
+
+    <!-- script  -->
+    <script src="./scripts/node.js" type="module"></script>
+  </body>
+</html>
