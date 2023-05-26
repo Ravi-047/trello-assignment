@@ -37,7 +37,7 @@ async function createTrelloCard(name, description, startDate, dueDate) {
             due: formattedDueDate
         })
         console.log('Card created successfully. You can visit here', response.data.url);
-        alert("Card created successfully")
+        alert('Card created successfully. You can visit here', response.data.url)
 
     } catch (error) {
         console.error('Error creating card:', error.response ? error.response.data : error.message);
